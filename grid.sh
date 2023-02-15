@@ -46,7 +46,7 @@ fi
 
 if [ $total -lt 1 ]
 then
-  let total=$pages*9
+  let total=${pages}*${rows]*${columns}
   echo "No total image count given with -t, creating $total images"
 fi
 
